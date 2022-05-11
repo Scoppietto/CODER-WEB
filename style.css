@@ -59,18 +59,30 @@ footer i {
   font-weight: bold;
 }
 
+#nosotros p {
+  margin-top: 30px;
+}
+
 .card {
   text-align: center;
   margin-right: 25px;
   margin-left: 25px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+  height: 550px;
 }
 
 .card h5 {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .card img {
-  height: 450px;
+  height: 300px;
+}
+
+.card:hover {
+  zoom: 102%;
 }
 
 /*-----------SECTION 5-------------*/
@@ -167,4 +179,6 @@ footer i {
   border: 10px solid #82e9ee;
   text-align: center;
 }
+
+/*-----------/MIXIN-----------*/
 /*# sourceMappingURL=style.css.map */
