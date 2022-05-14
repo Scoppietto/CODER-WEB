@@ -1,148 +1,209 @@
-/*-----------GENERAL-------------*/
+/*-----------------------------------GENERAL-----------------------------------*/
+    /*------------------------------VARIABLE-----------------------------------*/
+        $palette: (
+            'primary': rgb(160, 160, 160),
+            'secondary': black,
+            'gradient': rgba(0,0,0,0.7),
+            'change': red
+        );
+    /*-----------------------------/VARIABLE------------------------------------*/
+    /*------------------------------UNIVERSAL-----------------------------------*/
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+        }
+    /*-----------------------------/UNIVERSAL-----------------------------------*/
+    /*--------------------------------BODY--------------------------------------*/
+        body{
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.0),
+                rgba(0,0,0,0.0)
+            )
+            ,url("./img/backgroundGeneral.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        /*----------------------------HEADER------------------------------------*/
+            header{
+                h1{
+                color: rgb(160, 160, 160);
+                }
+                .imgLogo{
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 15px;
+                }
+            }
+        /*---------------------------PORTADA------------------------------------*/
+                #portada{
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(0,0,0,0.7),
+                        rgba(0,0,0,0.7)
+                    )
+                    ,url("./img/portada.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 600px;
+                    h2{
+                        color: rgb(160, 160, 160);
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+        /*---------------------------/PORTADA-----------------------------------*/
+        /*---------------------------/HEADER------------------------------------*/
+        /*-----------------------------MAIN-------------------------------------*/
+            /*-----------------------NOSOTROS-----------------------------------*/
+                #nosotros{
+                    margin-top: 200px;
+                    margin-bottom: 200px;
+                    margin-left: 40px;
+                    
+                    h3{
+                        font-weight: bold;
+                    }
+                    p{
+                        margin-top: 30px;
+                    }
+                }
+            /*----------------------/NOSOTROS-----------------------------------*/
+            /*-----------------------EMPRESA------------------------------------*/
+                .title-empresa{
+                    h3{
+                        text-align: center;
+                        font-weight: bold;
+                        border: 20px solid rgba(255, 255, 255, 0.598);
+                        box-shadow: 2px 2px 3px rgb(0, 0, 0);
+                        margin-bottom: 50px;
+                    }
+                }
+            /*-----------------------/EMPRESA-----------------------------------*/
+            /*----------------------PARTICULAR----------------------------------*/
+                .title-particular{
+                    h3{
+                        text-align: center;
+                        font-weight: bold;
+                        border: 20px solid rgba(255, 255, 255, 0.598);
+                        box-shadow: 2px 2px 3px rgb(0, 0, 0);
+                        margin-bottom: 50px;
+                    }
+                }
+            /*----------------------/PARTICULAR---------------------------------*/
+            /*------------------------EQUIPO------------------------------------*/
+                .equipo{
+                    h3{
+                        text-align: center;
+                        font-weight: bold;
+                        border: 20px solid rgba(255, 255, 255, 0.598);
+                        box-shadow: 2px 2px 3px rgb(0, 0, 0);
+                    }
+                    .container{
+                        margin-left: 85px;
+                        margin-top: 70px;
+                        h4{
+                            margin-top: 25px;
+                        }
+                        p{
+                            margin-top:10px;
+                        }
+                    }
+                }
+            /*-----------------------/EQUIPO------------------------------------*/      
+            /*------------------------CARDS-------------------------------------*/
+            .card{
+                    text-align: center;
+                    margin-right: 25px;
+                    margin-left: 25px;
+                    box-shadow: 0px 1px 10px rgba(0,0,0,0.9);
+                    height: 600px;
+                    h5{
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                    img{
+                        height: 300px;
+                    }
+                }
+                .card:hover{
+                    background-color: rgba(0, 0, 0, 0.023);
+                    zoom: 102%;
+                }
+            /*-----------------------/CARDS-------------------------------------*/
+            /*-----------------------CONTACTO-----------------------------------*/
+                .form{
+                    height: 250px;
+                    width: 350px;
+                    margin-top: 150px;
+                    margin-left: 5px;
+                    border-radius: 25%;
+                }
+            /*----------------------/CONTACTO-----------------------------------*/
+        /*----------------------------/MAIN-------------------------------------*/
+        /*----------------------------FOOTER------------------------------------*/
+            footer{
+                background-color: black;
+                margin-top: 10px;
+                i{
+                    margin-right: 25px;
+                    padding-left: 15px;
+                    color: rgb(130, 130, 130);
+                }
+                i:hover{
+                    color: rgb(255, 255, 255);
+                }
+            }
+        /*---------------------------/FOOTER------------------------------------*/
+        /*---------------------------CONTAINER----------------------------------*/
+            .container{
+                max-width: 220vh;
+            }
+        /*--------------------------/CONTAINER----------------------------------*/
+        /*----------------------------DIVISOR-----------------------------------*/
+            body hr {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                border: 20px solid rgba(255, 255, 255, 0.598);
+                box-shadow: 2px 2px 3px rgb(0, 0, 0);
+                }
+        /*---------------------------/DIVISOR-----------------------------------*/
+        /*---------------------------WHATSAPP-----------------------------------*/
+            .float{
+                position:fixed;
+                width:45px;
+                height:45px;
+                bottom:40px;
+                right:40px;
+                background-color:#0eca53;
+                color:#FFF;
+                border-radius:50px;
+                text-align:center;
+                font-size:25px;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.496);
+                z-index:100;
+            }
+            .float:hover{
+                background-color: #13ff52;
+            }
+            .my-float{
+                margin-top: 10px;
+            }
+        /*---------------------------WHATSAPP-----------------------------------*/
+    /*--------------------------------/BODY-------------------------------------*/
+/*-----------------------------------/GENERAL-----------------------------------*/
 
-/*-----------VARIABLE----------*/
-$palette: (
-    'primary': rgb(160, 160, 160),
-    'secondary': black,
-    'gradient': rgba(0,0,0,0.7),
-    'change': red
-);
-
-/*-----------/VARIABLE----------*/
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-}
-
-body{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.0),
-        rgba(0,0,0,0.0)
-    )
-    ,url("./img/backgroundGeneral.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-header{
-    h1{
-    color: rgb(160, 160, 160);
-    }
-}
-
-#portada{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    )
-    ,url("./img/portada.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-
-    h1{
-        color: rgb(160, 160, 160);
-        text-align: center;
-        font-weight: bold;
-    }
-}
-
-footer{
-    background-color: black;
-    margin-top: 10px;
-
-    i{
-        margin-right: 25px;
-        padding-left: 15px;
-        color: rgb(160, 160, 160);
-    }
-}
-
-.container{
-    max-width: 215vh;
-}
-
-/*-----------SECTION GENERAL-------------*/
-
-#nosotros{
-    margin-top: 200px;
-    margin-bottom: 200px;
-    margin-left: 40px;
     
-    h2{
-        font-weight: bold;
-    }
 
-    p{
-        margin-top: 30px;
-    }
-}
 
-.card{
-    text-align: center;
-    margin-right: 25px;
-    margin-left: 25px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.9);
-    height: 550px;
 
-    h5{
-        font-weight: bold;
-        text-transform: uppercase;
-    }
 
-    img{
-        height: 300px;
-    }
-}
-
-.card:hover{
-    zoom: 102%;
-}
-
-/*-----------SECTION 5-------------*/
-
-.form{
-    height: 250px;
-    width: 350px;
-    margin-top: 150px;
-    margin-left: 5px;
-    border-radius: 25%;
-}
-
-.float{
-	position:fixed;
-	width:45px;
-	height:45px;
-	bottom:40px;
-	right:40px;
-	background-color:#0eca53;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:25px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.496);
-    z-index:100;
-}
-
-.my-float{
-	margin-top: 10px;
-}
-
-/*-----------IMG-------------*/
-
-.imgLogo{
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-}
+/*------------------------------------------------TRASH----------------------------------------------------------------------------------*/
 
 /*-----------MAPA-----------*/
-
 .cont-red, .cont-blue, .cont-green, .cont-yellow{
     height: 200px;
     width: 200px;
@@ -154,15 +215,12 @@ footer{
     margin-left: 110px;
     display: inline-block;
 }
-
 @each $color in red, blue, green, yellow{
     .cont-#{$color}{
         border-color: $color;
     }
 }
-
 /*-----------/MAPA-----------*/
-
 /*-----------EXTEND-----------*/
 .extendprueba{
     width: 150px;
@@ -171,7 +229,6 @@ footer{
     margin-left: 600px;
     padding: 40px;
 }
-
 .pruebaextend{
     @extend .extendprueba;
     color: white;
@@ -180,9 +237,7 @@ footer{
     margin-bottom: 50px;
     border: 10px solid violet;
 }
-
 /*-----------/EXTEND-----------*/
-
 /*-----------MIXIN-----------*/
 @mixin colormixin ($height, $width, $color, $background-color) {
     height: $height;
@@ -190,7 +245,6 @@ footer{
     color: $color;
     background-color: $background-color;
 }
-
 .pruebamixin{
 @include colormixin (200px, 150px, red, black);
 margin-left: 600px;
@@ -198,5 +252,3 @@ border: 10px solid rgb(130, 233, 238);
 text-align: center;
 }
 /*-----------/MIXIN-----------*/
-
-
