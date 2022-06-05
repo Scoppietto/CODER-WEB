@@ -73,6 +73,70 @@ header .imgLogo {
   font-weight: bold;
 }
 
+#portada2 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/portada.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/portadaEmpresa.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/portadaEmpresa.png");
+}
+
+#portada2 h2 {
+  color: #a0a0a0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#portada3 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/portada.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/portadaEquipo.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/portadaEquipo.png");
+}
+
+#portada3 h2 {
+  color: #a0a0a0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#portada4 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/portada.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/portadaParticular.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/portadaParticular.png");
+}
+
+#portada4 h2 {
+  color: #a0a0a0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#portada5 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/portada.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./img/portadaContacto.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/portadaContacto.png");
+}
+
+#portada5 h2 {
+  color: #a0a0a0;
+  text-align: center;
+  font-weight: bold;
+}
+
 /*---------------------------/PORTADA-----------------------------------*/
 /*---------------------------/HEADER------------------------------------*/
 /*-----------------------------MAIN-------------------------------------*/
@@ -258,65 +322,4 @@ body hr {
 /*---------------------------WHATSAPP-----------------------------------*/
 /*--------------------------------/BODY-------------------------------------*/
 /*-----------------------------------/GENERAL-----------------------------------*/
-/*------------------------------------------------TRASH----------------------------------------------------------------------------------*/
-/*-----------MAPA-----------*/
-.cont-red, .cont-blue, .cont-green, .cont-yellow {
-  height: 200px;
-  width: 200px;
-  background-color: black;
-  border: 10px solid blue;
-  border-radius: 100px;
-  margin-bottom: 55px;
-  margin-top: 50px;
-  margin-left: 110px;
-  display: inline-block;
-}
-
-.cont-red {
-  border-color: red;
-}
-
-.cont-blue {
-  border-color: blue;
-}
-
-.cont-green {
-  border-color: green;
-}
-
-.cont-yellow {
-  border-color: yellow;
-}
-
-/*-----------/MAPA-----------*/
-/*-----------EXTEND-----------*/
-.extendprueba, .pruebaextend {
-  width: 150px;
-  height: 150px;
-  background-color: red;
-  margin-left: 600px;
-  padding: 40px;
-}
-
-.pruebaextend {
-  color: white;
-  background-color: black;
-  border-radius: 100px;
-  margin-bottom: 50px;
-  border: 10px solid violet;
-}
-
-/*-----------/EXTEND-----------*/
-/*-----------MIXIN-----------*/
-.pruebamixin {
-  height: 200px;
-  width: 150px;
-  color: red;
-  background-color: black;
-  margin-left: 600px;
-  border: 10px solid #82e9ee;
-  text-align: center;
-}
-
-/*-----------/MIXIN-----------*/
 /*# sourceMappingURL=style.css.map */

@@ -69,22 +69,61 @@
                 }
             }
         /*---------------------------PORTADA------------------------------------*/
-                #portada{
-                    background-image: linear-gradient(
-                        0deg,
-                        rgba(0,0,0,0.7),
-                        rgba(0,0,0,0.7)
-                    )
-                    ,url("./img/portada.png");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    height: 600px;
-                    h2{
-                        color: rgb(160, 160, 160);
-                        text-align: center;
-                        font-weight: bold;
-                    }
-                }
+            @mixin portada {
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.7),
+                    rgba(0,0,0,0.7)
+                )
+                ,url("./img/portada.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 600px;
+                h2{
+                    color: rgb(160, 160, 160);
+                    text-align: center;
+                    font-weight: bold;
+                }    
+            }
+            #portada{
+                @include portada;
+            }
+            #portada2{
+                @include portada;
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.7),
+                    rgba(0,0,0,0.7)
+                )
+                ,url("./img/portadaEmpresa.png");
+            }
+            #portada3{
+                @include portada;
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.7),
+                    rgba(0,0,0,0.7)
+                )
+                ,url("./img/portadaEquipo.png");
+            }
+            #portada4{
+                @include portada;
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.7),
+                    rgba(0,0,0,0.7)
+                )
+                ,url("./img/portadaParticular.png");
+            }
+            #portada5{
+                @include portada;
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.7),
+                    rgba(0,0,0,0.7)
+                )
+                ,url("./img/portadaContacto.png");
+            }
         /*---------------------------/PORTADA-----------------------------------*/
         /*---------------------------/HEADER------------------------------------*/
         /*-----------------------------MAIN-------------------------------------*/
@@ -184,7 +223,7 @@
         /*----------------------------/MAIN-------------------------------------*/
         /*----------------------------FOOTER------------------------------------*/
             footer{
-                background-color: black;
+                background-color: rgb(0, 0, 0);
                 margin-top: 10px;
                 i{
                     margin-right: 25px;
@@ -243,60 +282,3 @@
         /*---------------------------WHATSAPP-----------------------------------*/
     /*--------------------------------/BODY-------------------------------------*/
 /*-----------------------------------/GENERAL-----------------------------------*/
-
-
-
-
-
-
-/*------------------------------------------------TRASH----------------------------------------------------------------------------------*/
-
-/*-----------MAPA-----------*/
-.cont-red, .cont-blue, .cont-green, .cont-yellow{
-    height: 200px;
-    width: 200px;
-    background-color: black;
-    border: 10px solid blue;
-    border-radius: 100px;
-    margin-bottom: 55px;
-    margin-top: 50px;
-    margin-left: 110px;
-    display: inline-block;
-}
-@each $color in red, blue, green, yellow{
-    .cont-#{$color}{
-        border-color: $color;
-    }
-}
-/*-----------/MAPA-----------*/
-/*-----------EXTEND-----------*/
-.extendprueba{
-    width: 150px;
-    height: 150px;
-    background-color: red;
-    margin-left: 600px;
-    padding: 40px;
-}
-.pruebaextend{
-    @extend .extendprueba;
-    color: white;
-    background-color: black;
-    border-radius: 100px;
-    margin-bottom: 50px;
-    border: 10px solid violet;
-}
-/*-----------/EXTEND-----------*/
-/*-----------MIXIN-----------*/
-@mixin colormixin ($height, $width, $color, $background-color) {
-    height: $height;
-    width: $width;
-    color: $color;
-    background-color: $background-color;
-}
-.pruebamixin{
-@include colormixin (200px, 150px, red, black);
-margin-left: 600px;
-border: 10px solid rgb(130, 233, 238);
-text-align: center;
-}
-/*-----------/MIXIN-----------*/
